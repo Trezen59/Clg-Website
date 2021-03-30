@@ -1,0 +1,519 @@
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/baf66a9e6e.js" crossorigin="anonymous"></script>
+	<style>
+		
+
+		img{
+			float: left;
+			margin-left: 25px;
+			margin-top: 10px;
+		}
+		
+	    .header{
+			background-color: #002858;
+			border-radius: 0 0 0 100px;
+			padding: 5px 0;
+			font-size: 13px;
+			overflow: hidden;
+		}
+		.container{
+			width: 1170px;
+			padding-right: 15px;
+			padding-left: 15 px;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 13px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		.left-text{
+			float: left;
+			margin-top: 10px;
+		}
+		.row{
+			display: block;
+		}
+		.StudentCorner{
+			padding: 10px 10px;
+			border: solid 2px #fd5308;
+			border-radius: 4px;
+			background-color: #fd5308;
+			color: white;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.StudentCorner:hover{
+			background-color: #002858;
+		}
+		.phone{
+			color: white;
+			margin: 20px;
+		}
+		.email{
+			color: white;
+			text-decoration: none;
+			margin: 20px;
+		}
+		.email:hover{
+			color: #fd5308;
+		}
+		.right-text{
+			display: block;
+			text-align: right;	
+		}
+		.social-media{
+			text-decoration: none;
+			display: inline;	
+		}
+		.social-media a {
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+			transition: 0.5s;
+			margin-bottom: -10px;
+			margin-top: -10px;	
+		}
+		.social-media .fb:hover{
+			background-color: blue;
+			margin-top: -10px;
+		}
+		.social-media .tw:hover{
+			background-color:dodgerblue;
+		}
+		.social-media .yt:hover{
+			background-color: rgb(255, 0, 0);
+		}
+		.social-media .gp:hover{
+			background-color: rgb(255, 94, 0);
+		}
+		h1{
+			margin-top: 70px;
+			margin-left: 250px;
+			font-size: 200%;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: white;
+			width: 100%;
+			margin-top: 70px;
+			text-align: center;
+			margin-left: 150px;
+		}
+
+		.navbar a:hover{
+			color:#fd5308;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;  
+			border: none;
+			outline: none;
+			color: black;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: white;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color:gray;
+			min-width: 160px;
+			z-index: 1;
+			max-width: 200px;
+			
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: gray;
+			color: #fd5308;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.dropdown .dropbtn:hover{
+			color:#fd5308;
+		}
+		.topimg{
+			background-image: url("topimg.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-top: 10px;
+			width: auto;
+			height: 400px;
+			overflow: hidden;
+
+		}
+		.text-grid{
+			grid-template-columns: auto auto auto;
+			display: grid;
+			width: 1100px;
+			text-align: left;
+			margin-left: 80px;
+			color: floralwhite;
+			margin-top: -100px;
+		
+		}
+		.grid-about{
+			background-color: lawngreen;
+			padding: 5px 10px;
+		}
+		.grid-vision{
+			background-color: orange;
+			padding: 5px 10px;
+
+		}
+		.grid-mission{
+			background-color: dodgerblue;
+			padding: 5px 10px;
+
+		}
+		.msg-container{
+			background-color: rgb(226, 226, 226);
+			height: 450px;
+			margin-top: 50px;
+			display: inline-block;
+		}
+		.msg-img img{
+			width: 550px;
+			height: 350px;
+			padding: 30px 20px;
+			
+		}
+		.msg{
+			margin-top: 55px;
+		}
+		.viewmore{
+			padding: 10px 10px;
+			border: solid 2px #fd5308;
+			border-radius: 4px;
+			background-color: #fd5308;
+			color: white;
+			text-decoration: none;
+			height: 40px;
+			width: 100px;
+		}
+		.viewmore:hover{
+			background-color: #002858;
+			
+		}
+		.image-grid{
+			display: grid;
+			grid-template-columns:  auto auto auto;
+			justify-content: start;
+			margin-top: 40px;
+			
+			
+		}
+		.image-grid img{
+			width: 385px;
+		}
+		.image-grid h3{
+			max-width: 385px;
+			margin-left: 23px;
+			margin-top: 20px;
+			
+		}
+		.image-grid button{
+			margin-left: 23px;
+			padding: 10px 10px;
+			border: solid 2px #fd5308;
+			border-radius: 4px;
+			background-color: #fd5308;
+			color: white;
+			text-decoration: none;
+		}
+		.image-grid button:hover{
+			background-color: #002858;
+		}
+		*{
+			font-family: "Poppins",sans-serif;
+			
+		}
+
+		.legal-forms{
+			background-color: #003261;
+			width: 100%;
+			margin-top: 100px;
+			color: aliceblue;
+		}
+
+		.legal-forms h3{
+			margin-left: 400px;
+			align-content: center;
+			padding: 30px 0px 0px 0px;
+			font-size: 15px;
+			
+		}
+		.lastlinks a{
+			color: #72acdc;
+			text-decoration: none;
+			padding: 7px 5px;
+			margin-left: 400px;
+			display: block;
+			font-size: 12px;
+			border-top: dashed 1px #165080;
+			max-width: 200px;
+			
+		}
+		.lastlinks{
+			padding-bottom: 30px;
+		}
+		.lastlinks a:hover{
+			color: #fd5308;
+		}
+
+		.copy-right{
+			padding: 20px 0px;
+			background-color: #002858;
+		}
+		.bottom-social{
+			display: block;
+
+		}
+		
+
+	</style>
+</head>
+
+<body style="margin: 0px 0px 0px 0px;">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<span class="phone">
+						<i class="fa fa-phone" style="margin-right: 5px;"></i>+912642227054
+					</span>
+					<a class="email" href="mailto:gec-bharuch-dte@gujarat.gov.in">
+						<i class="fa fa-envelope-o" style="margin-right: 5px;"></i>gec-bharuch-dte@gujarat.gov.in
+					</a>
+				</div>
+				<div class="right-text">
+					<div class="social-media">
+						<a href="#" class="fb" style="color: white;"><i class="fa fa-facebook" style="margin-top: 10px;"></i></a>
+						<a href="#" class="tw" style="color: white;"><i class="fa fa-twitter" style="margin-top: 10px;"></i></a>
+						<a href="#" class="yt" style="color: white;"><i class="fa fa-youtube" style="margin-top: 10px;"></i></a>
+						<a href="#" class="gp" style="color: white;"><i class="fa fa-google-plus" style="margin-top: 10px;"></i></a>
+					</div>
+					<a class="StudentCorner" href="http://gecbharuch.com/student-corner/">STUDENT CORNER</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<img src="gec_bhar.jpg" alt="gec Bharuch logo" width="150px" height="150px">
+	<h1>GOVERNMENT ENGINEERING COLLEGE BHARUCH</h1>
+	<div class="navbar">
+		<a href="#">HOME</a>
+		<div class="dropdown">
+			<button class="dropbtn">ABOUT<i class="fa fa-angle-down" style="margin-left: 5px;"></i></button>
+			<div class="dropdown-content">
+				<a href="#">About GEC</a>
+				<a href="#">Organizational Chart</a>
+				<a href="#">Institute Commitees</a>
+				<a href="#">Infrastructure</a>
+				<a href="#">News letters</a>
+				<a href="#">Brochure</a>
+				<a href="#">Disclosure</a>
+			</div>
+		</div>
+		
+		<div class="dropdown">
+			<button class="dropbtn">ACADEMICS<i class="fa fa-angle-down" style="margin-left: 5px;"></i></button>
+			<div class="dropdown-content">
+				<a href="#">BE Admissions and Courses</a>
+				<a href="#">Academic Calendar</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">DEPARTMENTS<i class="fa fa-angle-down" style="margin-left: 5px;"></i></button>
+			<div class="dropdown-content">
+				<a href="#">Chemical Engineering</a>
+				<a href="#">Civil Engineering</a>
+				<a href="#">Electrical Engineering</a>
+				<a href="#">Electronics and Communication Engineering</a>
+				<a href="#">General Department</a>
+				<a href="#">Mechanical Engineering</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">CAMPUS<i class="fa fa-angle-down" style="margin-left: 5px;"></i></button>
+			<div class="dropdown-content">
+				<a href="#">GEC Clubs</a>
+				<a href="#">Student Cell</a>
+				<a href="#">Industrial Training</a>
+				<a href="#">National Service Scheme</a>
+				<a href="#">Sports</a>
+				<a href="#">Tech Fest</a>
+				<a href="#">Information and Education Campaign (ICE) About Covid-19</a>
+				<a href="#">GEC Bharuch Alumini Association</a>
+
+
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">PLACEMENT<i class="fa fa-angle-down" style="margin-left: 5px;"></i></button>
+			<div class="dropdown-content">
+				<a href="#">About TPO Cell</a>
+				<a href="#">Placement Policy</a>
+				<a href="#">Placement Brochure</a>
+				<a href="#">Placement Statistics</a>
+				<a href="#">TCS TAAP</a>
+				
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">E-CELL/SSIP CELL<i class="fa fa-angle-down" style="margin-left: 5px;"></i></button>
+			<div class="dropdown-content">
+				<a href="#">SSIP</a>
+				<a href="#">CV Format</a>
+				<a href="#">IPR and Patent</a>
+				<a href="#">Research Grants</a>
+				<a href="#">SSIP Guidelines</a>
+				
+			</div>
+		</div>
+
+		<a href="#">CIRCULARS</a>
+	</div>
+
+	<div class="topimg">
+	</div>
+
+	<div class="text-grid">
+		<div class="grid-about">
+			<h2>About</h2>
+			<p>Government Engineering College, Bharuch is one of eight New Government Engineering Colleges established in July-2004.</p>
+		</div>
+		<div class="grid-vision">
+			<h2>Vision</h2>
+			<p>Impart value based Integrative education to empower youth by fostering innovation and leadership ethos for socio-professional needs.</p>
+		</div>
+		<div class="grid-mission">
+			<h2>Mission</h2>
+			<p>Strengthen academic infrastructure to achieve excellence in engineering education. Foster talent by developing global mindset.</p>
+		</div> 
+	</div>
+
+	<div class="msg-container">
+		<div class="msg-img">
+			<img src="principal.jpeg" alt="img">
+		</div>
+		<div class="msg">
+			<h2>MESSAGE FROM PRINCIPAL </h2>
+			<hr style="background-color: #fd5308; width: 330px; margin-left: 0px; ">
+			
+			<p>Hope you and your family are all well and safe! Our (as well as for the country) primary concern now is on how to tide over this difficult phase of the pandemic. Firstly, I request you follow strictly the health guidelines provided by the state and centrals government agencies so as to help one another safeguard from the virus.</p>
+			<p>In a globally competitive world today, tumultuous changes are taking place. Even the nature of change is changing. Engineering education and services are no exception. Keeping in</p>
+		</div>
+		<div><button class="viewmore">View More</button></div>
+
+	</div>
+	<div><h1 style="text-align: center; margin-left: -20px;">ACADEMIC DEPARTMENTS</h1>
+		<hr style="background-color: #fd5308; width: 400px;">
+	</div>
+
+	<div class="image-grid">
+		<div>
+			<img src="ec.jpg" alt="ec">
+			<h3>ELECTRONICS & COMMUNICATION ENGINEERING</h3>
+			<button class="readmore">Read More</button>
+		</div>
+		<div>
+			<img src="ee.jpg" alt="ee">
+			<h3>ELECTRICAL ENGINEERING</h3>
+			<button class="readmore">Read More</button>
+		</div>
+		<div>
+			<img src="me.jpg" alt="me">
+			<h3>MECHANICAL ENGINEERING</h3>
+			<button class="readmore">Read More</button>
+		</div>
+		<div>
+			<img src="ce.jpg" alt="ce">
+			<h3>CIVIL ENGINEERING</h3>
+			<button class="readmore">Read More</button>
+		</div>
+		<div>
+			<img src="che.jpg" alt="che">
+			<h3>CHEMICAL ENGINEERING</h3>
+			<button class="readmore">Read More</button>
+		</div>
+		<div>
+			<img src="ge.jpg" alt="ge">
+			<h3>GENERAL DEPARTMENT</h3>
+			<button class="readmore">Read More</button>
+		</div>
+	</div>
+
+	<div class="legal-forms">
+
+		<h3>LEGAL FORMS</h3>
+		<hr style="background-color: #fd2508; width: 50px; margin-left: 400px;">
+		<div class="lastlinks">
+			
+			<a href="#">MOU</a>
+			<a href="#">Mandatory Disclosure</a>
+			<a href="#">Tender Notice</a>
+			<a href="#">Right to Information Act</a>
+				
+		</div>
+	</div>
+	<div class="copy-right">
+		<div class="container">
+			<div class="bottom-social">
+				<div class="social-media">
+					<a href="#" class="fb" style="color: white;"><i class="fa fa-facebook" style="margin-top: 10px;"></i></a>
+					<a href="#" class="tw" style="color: white;"><i class="fa fa-twitter" style="margin-top: 10px;"></i></a>
+					<a href="#" class="yt" style="color: white;"><i class="fa fa-youtube" style="margin-top: 10px;"></i></a>
+					<a href="#" class="gp" style="color: white;"><i class="fa fa-google-plus" style="margin-top: 10px;"></i></a>
+				</div>
+				<span style="align-content: center; color: aliceblue; margin-left: 400px;">
+					© All right reserved 2020
+				</span>
+				<span style="margin-left: 400px; color: aliceblue;">
+					GEC Bharuch
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
